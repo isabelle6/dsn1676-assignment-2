@@ -17,6 +17,34 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    background-color: #000;
+}
+
 .clock-face {
-    background-image: url(../images/clock-face.svg) no-repeat center center;
+    background-image: url(../images/clock-face.svg);
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.hand-hour {
+    position: absolute;
+    width: 14px;
+    left: calc(50% - 7px);
+    bottom: 50%;
+}
+
+.hand-minute {
+    position: absolute;
+    width: 14px;
+    bottom: 50%;
+    left: calc(50% - 7px);
+}
+
+.center {
+    position: absolute;
+    width: 28px;
+    left: calc(50% - 14px);
+    top: calc(50% - 14px);
 }
