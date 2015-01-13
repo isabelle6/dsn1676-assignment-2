@@ -21,11 +21,50 @@ body {
     background-color: #000;
 }
 
+.centered {
+    text-align: center;
+}
+
+.button-forwards {
+    background-color: #339900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    width: 6em;
+    line-height: 6em;
+    margin: 1em;
+    transition: all 500ms linear;
+}
+
+.button-forwards:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.button-backwards {
+    background-color: #FF0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    display: inline-block;
+    width: 6em;
+    line-height: 6em;
+    margin: 1em;
+    transition: all 500ms linear;
+}
+
+.button-backwards:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 .clock-face {
     background-image: url(../images/clock-face.svg);
     position: relative;
     width: 300px;
     height: 300px;
+    margin: 0 auto;
 }
 
 .hand-hour {
@@ -37,7 +76,7 @@ body {
     transform-origin: center bottom;
 }
 
-.clock-face:hover .hand-hour {
+.clock-face:target .hand-hour {
     transform: rotate(360deg);
 }
 
@@ -50,7 +89,7 @@ body {
     transform-origin: center bottom;
 }
 
-.clock-face:hover .hand-minute {
+.clock-face:target .hand-minute {
     transform: rotate(4320deg);
 }
 
