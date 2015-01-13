@@ -33,6 +33,12 @@ body {
     width: 14px;
     left: calc(50% - 7px);
     bottom: 50%;
+    transition: all 6000ms linear;
+    transform-origin: center bottom;
+}
+
+.clock-face:hover .hand-hour {
+    transform: rotate(360deg);
 }
 
 .hand-minute {
@@ -40,6 +46,12 @@ body {
     width: 14px;
     bottom: 50%;
     left: calc(50% - 7px);
+    transition: all 6000ms linear;
+    transform-origin: center bottom;
+}
+
+.clock-face:hover .hand-minute {
+    transform: rotate(4320deg);
 }
 
 .center {
